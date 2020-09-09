@@ -7,9 +7,12 @@ Website: https://dotnetconfig.org
 */
 
 export default function(hljs) {
+  var NUMBER_SUFFIX = {
+    className: 'built_in',
+    begin: /(?<=\b\d+(\.\d+)?)([k|K|m|M|g|G|t|T][b|B]?)\b/
+  };
   var NUMBER = {
-    className: 'literal',
-    begin: /\b\d+(\.\d+)?([k|K|m|M|g|G|t|T][b|B]?)?\b/
+    begin: /\b\d+(\.\d+)?(?=\b|([k|K|m|M|g|G|t|T][b|B]?)?\b)/
   };
   var QUOTED_STRING = {
     begin: '"',
@@ -22,12 +25,12 @@ export default function(hljs) {
     {begin: /#/, end: /$/},
   ];
   var LITERAL = {
-    className: 'literal',
-    begin: /\bon|off|true|false|yes|no|1|0\b/
+    className: 'built_in',
+    begin: /\bon|off|true|false|yes|no\b/
   };
 
 
-  var VARIABLE = /[\w\d-]+(?=\s*=)|[\w\d-]+(?=\s*[$#;])/;
+  var VARIABLE = /(?<=^\s*)\w[\w\d-]+(?=\s*(=|([#;]|$)))/;
 
   return {
     name: 'dotnetconfig',
@@ -49,6 +52,7 @@ export default function(hljs) {
           contains: [
             COMMENT,
             NUMBER,
+            NUMBER_SUFFIX,
             LITERAL,
             QUOTED_STRING
           ]
