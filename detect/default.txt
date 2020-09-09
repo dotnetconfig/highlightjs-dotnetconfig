@@ -1,0 +1,30 @@
+# .netconfig is awesome: https://dotnetconfig.org
+
+[serve]
+    port = 8080
+    gzip            # shorthand notation for boolean true, equivalent to gzip = true|on|yes|1
+
+[vs "alias"]        ; comments can use semi-colon too
+    comexp = run|community|exp
+    preexp = run|preview|exp
+
+[file]
+    # example of multi-valued variables
+    url = https://github.com/dotnet/runtime/tree/master/docs/design/features
+    url = https://github.com/dotnet/aspnetcore/tree/master/docs
+
+# subsections allow grouping variables
+[file "docs/design/features/code-versioning.md"]
+    url = https://github.com/dotnet/runtime/blob/master/docs/design/features/code-versioning.md
+    etag = 7405567...
+
+[mytool]
+    description = "\t tab and \n newline escapes, plus \\ backslash are valid"
+    title = My tool is great    # internal whitespace preserved without needing double quotes
+    path = C:\\tool             # backslashes always escaped, inside or outside double quotes
+    size = 500kb                # numbers can have a multiplier (case insensitive) suffix kb, mb, gb, tb 
+    max-size = 1T               # the 'b' is optional.
+    compress = true             # multiple variants for boolean: true|false|yes|no|on|off|1|0
+    secure   = yes
+    localized = off
+    enabled  = 1    

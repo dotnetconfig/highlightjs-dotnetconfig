@@ -1,0 +1,27 @@
+{
+    "name": "highlightjs-dotnetconfig",
+    "version": "1.0.0",
+    "description": "highlight.js syntax definition for dotnetconfig",
+    "main": "src/languages/dotnetconfig.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dotnetconfig/highlightjs-dotnetconfig"
+    },
+    "keywords": [
+      "dotnet",
+      "tool",
+      "configuration",
+      "highlight.js",
+      "highlightjs",
+      "syntax"
+    ],
+    "author": "Daniel Cazzulino <daniel@cazzulino.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/dotnetconfig/highlightjs-dotnetconfig/issues"
+    },
+    "homepage": "https://github.com/dotnetconfig/highlightjs-dotnetconfig"
+  }

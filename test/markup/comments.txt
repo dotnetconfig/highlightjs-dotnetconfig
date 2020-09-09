@@ -1,0 +1,6 @@
+# comment
+; comment
+[section] ; comment
+x = "abc"   # comment
+y = 123; comment
+z           # comment
