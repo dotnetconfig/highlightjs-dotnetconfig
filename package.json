@@ -1,8 +1,8 @@
 {
-  "name": "highlightjs-dotnetconfig",
+  "name": "highlightjs-gitconfig",
   "version": "0.0.42",
-  "description": "highlight.js syntax definition for dotnetconfig",
-  "main": "src/languages/dotnetconfig.js",
+  "description": "highlight.js syntax definition for gitconfig/dotnetconfig",
+  "main": "src/languages/gitconfig.js",
   "files": [
     "/src",
     "/dist",
@@ -14,12 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dotnetconfig/highlightjs-dotnetconfig"
+    "url": "https://github.com/dotnetconfig/highlightjs-gitconfig"
   },
   "keywords": [
     "dotnet",
+    "git",
     "tool",
     "configuration",
+    "config",
     "highlight.js",
     "highlightjs",
     "syntax"
@@ -27,7 +29,7 @@
   "author": "Daniel Cazzulino <daniel@cazzulino.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dotnetconfig/highlightjs-dotnetconfig/issues"
+    "url": "https://github.com/dotnetconfig/highlightjs-gitconfig/issues"
   },
-  "homepage": "https://github.com/dotnetconfig/highlightjs-dotnetconfig"
+  "homepage": "https://github.com/dotnetconfig/highlightjs-gitconfig"
 }

@@ -1,4 +1,4 @@
-# dotnetconfig grammar for highlight.js
+# gitconfig/dotnetconfig grammar for highlight.js
 
 Language plugin for highlightjs.
 

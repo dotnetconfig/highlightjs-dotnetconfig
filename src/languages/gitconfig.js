@@ -1,6 +1,6 @@
 /*
-Language: dotnetconfig
-Description: Standard configuration for dotnet tools
+Language: gitconfig
+Description: Git and dotnet tool configuration
 Author: Daniel Cazzulino <daniel@cazzulino.com>
 Category: common, config
 Website: https://dotnetconfig.org
@@ -33,8 +33,8 @@ export default function(hljs) {
   var VARIABLE = /(?<=^\s*)\w[\w\d-]+(?=\s*(=|([#;]|$)))/;
 
   return {
-    name: 'dotnetconfig',
-    aliases: ['dotnetconfig', 'gitconfig'],
+    name: 'gitconfig',
+    aliases: ['gitconfig', 'dotnetconfig'],
     case_insensitive: true,
     disableAutodetect: true,    
     illegal: /\S/,
